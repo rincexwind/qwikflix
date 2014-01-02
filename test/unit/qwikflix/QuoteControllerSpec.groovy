@@ -16,5 +16,16 @@ class QuoteControllerSpec extends Specification {
     }
 
     void "test something"() {
-    }
+    	given: "A set of numbers"
+		int a = 7
+		int b = 4
+		
+		when: "The numbers are summed"
+		int c = a + b
+		
+		then: "The answer is the sum of values"
+		c == 11
+	}
+	
+	
 }
